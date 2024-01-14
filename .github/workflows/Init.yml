@@ -21,11 +21,7 @@ jobs:
           echo "reponame=$repo_name" >> "$GITHUB_OUTPUT"
 
       - name: replace-README
-<<<<<<< HEAD
-        uses: gendloop/replace-str@main
-=======
         uses: gendloop/replace-str@v1.0.1
->>>>>>> 8af6140 (ci: update action version)
         with:
           token: ${{ github.token }}
           path-to-replace: README.md
@@ -34,11 +30,7 @@ jobs:
           replace-to-str: ${{ steps.get-repo-name.outputs.reponame }}
 
       - name: replace-App
-<<<<<<< HEAD
-        uses: gendloop/replace-str@main
-=======
         uses: gendloop/replace-str@v1.0.1
->>>>>>> 8af6140 (ci: update action version)
         with:
           token: ${{ github.token }}
           path-to-replace: App.json
